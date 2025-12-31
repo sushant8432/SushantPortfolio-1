@@ -205,7 +205,7 @@ contactForm.addEventListener('submit', async (e) => {
         // Automatically detect if running locally or in production
         const API_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
             ? 'http://localhost:5000'
-            : 'https://sushant-portfolio-xlm8.vercel.app'; // ✅ YOUR BACKEND URL
+            : 'https://sushantportfolio-pvk8.onrender.com/'; // ✅ YOUR BACKEND URL
         
         const response = await fetch(`${API_URL}/api/contact`, {
             method: 'POST',
@@ -331,3 +331,4 @@ window.addEventListener('load', () => {
     // Set initial active nav link
     setActiveNavLink();
 });
+
